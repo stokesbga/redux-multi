@@ -4,7 +4,7 @@
   "repository": "git://github.com/ashaffer/redux-multi.git",
   "version": "0.1.12",
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "prepublish": "rm -rf lib && babel src --out-dir lib",
     "postpublish": "rm -rf lib"
