@@ -2,7 +2,7 @@
  * Redux dispatch multiple actions
  */
 
-function multi ({dispatch}) {
+function multiMiddlewear ({dispatch}) {
   return next => action =>
     Array.isArray(action)
       ? action.filter(Boolean).map(dispatch)
@@ -13,4 +13,4 @@ function multi ({dispatch}) {
  * Exports
  */
 
-export default multi
+export default multiMiddlewear
